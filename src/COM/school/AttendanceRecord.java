@@ -1,8 +1,8 @@
 package com.school;
 
 public class AttendanceRecord {
-    private int studentId;
-    private int courseId;
+    private final int studentId;
+    private final int courseId;
     private String status;
 
     public AttendanceRecord(int studentId, int courseId, String status) {
@@ -26,5 +26,9 @@ public String getStatus() {
 }
     public void displayRecord() {
         System.out.println("Attendance Record -Student ID:" + studentId + " in course ID: " + courseId + " has status: " + status);
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
