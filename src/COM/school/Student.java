@@ -1,5 +1,5 @@
 package com.school;
-public class Student extends Person {
+public class Student extends Person implements Storable {
     // private static int nextStudentIdCounter= 1;
     // int studentId;
     // String name;
@@ -32,4 +32,11 @@ public class Student extends Person {
         super.displayDetails();
         System.out.println("Grade Level: " + gradeLevel);
     }
+
+
+    @Override
+    public String toDataString() {
+        return getId() + "," + getName() + "," + gradeLevel;
+    }
+
 }

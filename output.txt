@@ -1,0 +1,6 @@
+1,Alice Wonderland,10th grade
+2,Bob The Builder,9th grade
+Teacher,Mr. Smith,Physics
+Staff,Ms. Kelly,Admin Assistant
+Course,101,CS101: Intro to Programming
+Course,102,MA202: Linear Algebra
